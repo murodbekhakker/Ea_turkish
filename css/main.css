@@ -30,6 +30,25 @@ a {
   padding: 0 20px;
 }
 
+.loading {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 999999999999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+#loading.loading-none {
+  opacity: 0;
+  z-index: -1;
+}
+
 .navbar-collapse {
   flex-grow: 0;
 }
@@ -1000,13 +1019,32 @@ footer .footer_menu .footer_menu_working_hours P {
   }
 }
 .eaturkish_restaurant_vidio .modal-dialog .modal-content .eaturkish_restaurant_vidio_footer button {
-  padding: 10px 20px 10px 20px;
-  border-radius: 70px;
-  border: 1px solid;
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(238, 238, 238, 0.2941176471);
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+}
+.eaturkish_restaurant_vidio .modal-dialog .modal-content .eaturkish_restaurant_vidio_footer button > svg {
+  margin-right: 5px;
+  margin-left: 5px;
   font-size: 20px;
-  width: 130px;
-  color: rgb(187, 35, 57);
-  background-color: rgb(255, 255, 255);
+  transition: all 0.4s ease-in;
+}
+.eaturkish_restaurant_vidio .modal-dialog .modal-content .eaturkish_restaurant_vidio_footer button:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+.eaturkish_restaurant_vidio .modal-dialog .modal-content .eaturkish_restaurant_vidio_footer button:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
 }
 
 .photo_gallery {
