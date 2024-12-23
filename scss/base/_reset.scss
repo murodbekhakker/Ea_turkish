@@ -30,6 +30,7 @@ a {
   margin: 0 auto;
   padding: 0 $mb-padding + px;
 }
+//@@@@@@@@@@@@@@@@@@@@@@@@@@ loading @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2//
 .loading {
   padding-top: 200px;
   display: flex;
@@ -46,4 +47,32 @@ a {
 #loading.loading-none {
   opacity: 0;
   z-index: -1;
+}
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ bac to top @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//
+.bactop {
+  position: fixed;
+  z-index: 99999;
+  right: 20px;
+  bottom: 20px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  animation: bactop 1000ms infinite;
+  @keyframes bactop {
+    0% {
+      transform: translate(0px);
+    }
+    100% {
+      transform: translate(0, 10px);
+    }
+  }
+  img {
+    padding: 5px;
+  }
 }

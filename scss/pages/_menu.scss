@@ -48,11 +48,29 @@
     }
     img {
       width: 100%;
+      animation: bactop 100ms infinite;
+      @keyframes bactop {
+        0% {
+          transform: translate(0px);
+        }
+        100% {
+          transform: translate(0, 10px);
+        }
+      }
     }
   }
   .hero_section_scroll {
     padding: 70px 0 0 0;
     @include flx.flex(end, 0, 0);
+    animation: bactop 1ms infinite;
+    @keyframes bactop {
+      0% {
+        transform: translate(0px);
+      }
+      100% {
+        transform: translate(0, 10px);
+      }
+    }
     @media (max-width: 1300px) {
       display: none;
     }
