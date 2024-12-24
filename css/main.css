@@ -66,7 +66,7 @@ a {
     transform: translate(0px);
   }
   100% {
-    transform: translate(0, 10px);
+    transform: translate(0, 100px);
   }
 }
 .bactop img {
@@ -91,11 +91,17 @@ a {
   background-color: rgb(255, 255, 255);
 }
 
+.navbar-shrink {
+  padding: 15px 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
 header {
   position: sticky;
   top: 0;
   z-index: 99999;
   background-color: rgb(187, 35, 57);
+  transition: 0.5s;
 }
 @media (max-width: 991px) {
   header nav .nav-desktop {
@@ -121,6 +127,11 @@ header nav .nav-desktop .nav-link {
   font-weight: 400;
   line-height: 21.79px;
   letter-spacing: 0.04em;
+  transition: 0.2s;
+}
+header nav .nav-desktop .nav-link:hover {
+  padding-top: 5px;
+  border-bottom: 3px solid;
 }
 header nav .nav-desktop .nav_item_btn {
   padding: 5px 40px 5px 40px;
@@ -408,14 +419,14 @@ footer .footer_menu .footer_menu_working_hours P {
 }
 .hero_section_kebab img {
   width: 100%;
-  animation: bactop 100ms infinite;
+  animation: image 500ms infinite;
 }
-@keyframes bactop {
+@keyframes image {
   0% {
     transform: translate(0px);
   }
   100% {
-    transform: translate(0, 10px);
+    transform: translate(10px, 0px);
   }
 }
 .hero_section .hero_section_scroll {
@@ -424,7 +435,7 @@ footer .footer_menu .footer_menu_working_hours P {
   justify-content: end;
   align-items: 0;
   gap: 0px;
-  animation: bactop 1ms infinite;
+  animation: bactop 1000ms infinite;
 }
 @keyframes bactop {
   0% {
@@ -1206,4 +1217,168 @@ footer .footer_menu .footer_menu_working_hours P {
 }
 .photo_gallery .photo_gallery_text_cards .photo_gallery_cards .owl-dots {
   display: none;
+}
+
+.our_regular_menu_pack {
+  padding: 0 0 120px 0;
+}
+.our_regular_menu_pack .page_menus {
+  margin: 70px 0 70px 0;
+  color: rgb(170, 170, 170);
+}
+@media (max-width: 803px) {
+  .our_regular_menu_pack .page_menus {
+    margin: 20px 0 20px 0;
+  }
+}
+.our_regular_menu_pack .page_menus a {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 19.07px;
+  letter-spacing: 0em;
+  color: rgb(170, 170, 170);
+}
+.our_regular_menu_pack .page_menus a:hover {
+  color: rgb(187, 35, 57);
+}
+.our_regular_menu_pack .ap-tab-menus-card {
+  display: flex;
+  gap: 36px;
+  justify-content: space-evenly;
+}
+@media (max-width: 803px) {
+  .our_regular_menu_pack .ap-tab-menus-card {
+    flex-direction: column;
+  }
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab {
+  border-radius: 20px;
+  width: 428px;
+  height: 844px;
+  background-color: rgb(187, 35, 57);
+}
+@media (max-width: 803px) {
+  .our_regular_menu_pack .ap-tab-menus-card .ap-tab {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+  }
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab h3 {
+  padding: 50px 0 0 40px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: 0.03em;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 803px) {
+  .our_regular_menu_pack .ap-tab-menus-card .ap-tab h3 {
+    display: none;
+  }
+}
+@media (max-width: 803px) {
+  .our_regular_menu_pack .ap-tab-menus-card .ap-tab ul {
+    display: flex;
+    padding-left: 0;
+    overflow-y: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+  }
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab ul li .ap-tab_link_1 {
+  width: 82px;
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab ul li .ap-tab_link_2 {
+  width: 148px;
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab ul li .ap-tab_link_3 {
+  width: 156px;
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab ul li .ap-tab_link_4 {
+  width: 213px;
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab ul li .ap-tab_link_5 {
+  width: 169px;
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab ul li .ap-tab_link_6 {
+  width: 163px;
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab ul li .ap-tab_link_7 {
+  width: 211px;
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab ul li .ap-tab_link_8 {
+  width: 133px;
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab ul li a {
+  margin: 20px 0 0 0;
+  display: block;
+  padding: 10px 30px 10px 30px;
+  border-radius: 100px;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+@media (max-width: 803px) {
+  .our_regular_menu_pack .ap-tab-menus-card .ap-tab ul li a {
+    color: black;
+    padding: 10px 30px 10px 30px;
+    border-radius: 100px;
+    border: 2px solid rgb(187, 35, 57);
+    margin: 0;
+  }
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab ul li a:hover {
+  color: rgb(187, 35, 57);
+  background-color: rgb(255, 255, 255);
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards {
+  display: grid;
+  gap: 36px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 1320px) {
+  .our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card {
+  margin: 15px auto;
+  max-width: 400px;
+  border-radius: 14px;
+  padding: 20px 20px 40px 20px;
+  border: 1px solid rgba(36, 36, 36, 0.1);
+  transition: 0.5s;
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+@media (max-width: 355px) {
+  .our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card {
+    padding: 10px 10px 30px 10px;
+    width: 280px;
+    border-radius: 14px;
+    background-color: 0;
+  }
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card img {
+  width: 100%;
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card h2 {
+  max-width: 340px;
+  padding: 10px 0 0 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+.our_regular_menu_pack .ap-tab-menus-card .ap-tab-container .ap-tab-content .regular_menu_cards .regular_menu_card h4 {
+  padding: 30px 0 0 0;
+  color: rgb(187, 35, 57);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.68px;
+  letter-spacing: 0em;
+  text-align: center;
 }

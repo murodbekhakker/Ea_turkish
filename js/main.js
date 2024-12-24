@@ -77,6 +77,7 @@ const loadingDuration = 3000; // 1.8s
 setTimeout(() => {
   loading.classList.add("loading-none");
 }, loadingDuration);
+
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ aos @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//
 AOS.init();
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@ bac to top @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//
@@ -103,3 +104,15 @@ myBtn.onclick = function () {
     }
   }, 15);
 };
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ navbar shrink @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//
+window.addEventListener("scroll", function () {
+  shrink();
+});
+let navbar = document.getElementById("header");
+function shrink() {
+  if (scrollY > 100) {
+    navbar.classList.add("navbar-shrink");
+  } else {
+    navbar.classList.remove("navbar-shrink");
+  }
+}
