@@ -1367,7 +1367,7 @@ footer .footer_menu .footer_menu_working_hours P {
   transition: 0.2s ease-in-out;
 }
 
-.input {
+.login_input {
   width: 100%;
   margin-left: 10px;
   border-radius: 10px;
@@ -1375,7 +1375,7 @@ footer .footer_menu .footer_menu_working_hours P {
   height: 100%;
 }
 
-.input:focus {
+.login_input:focus {
   outline: none;
 }
 
